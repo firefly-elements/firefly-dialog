@@ -2,9 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0;url=demo/" />
     <title>firefly-dialog</title>
+    <script type="module">
+    import './firefly-dialog.js'
+    </script>
   </head>
+
   <body>
     <!--
         ELEMENT API DOCUMENTATION SUPPORT COMING SOON
@@ -12,5 +15,16 @@
         This page will automatically redirect you there when run in the browser
         with `polymer serve`.
       -->
+      <firefly-dialog>
+        <form class = 'detail-page'>
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey">
+          <br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse">
+          <br><br>
+        </form> 
+      </firefly-dialog>
+
   </body>
 </html>
