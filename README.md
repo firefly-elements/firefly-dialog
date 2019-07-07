@@ -1,19 +1,54 @@
-# \<firefly-dialog\>
+# <firefly-delete-dialog\>
 
-description goes here
+This component allows the user to delete a doctype from the database.
 
-## Install the Polymer-CLI
-
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
-
-## Viewing Your Element
+##Installation 
 
 ```
-$ polymer serve
+npm install --save @firefly/firefly-dialog
+
+```
+
+## In an HTML file
+```
+<html>
+   <head>
+      <script type="module">
+         import '@firefly/firefly-dialog';
+      </script>
+   </head>
+   <body>
+      <firefly-dialog>
+      </firefly-dialog>
+   </body>
+</html>
+</body>
+</html>
+```
+
+## In Polymer3
+
+```
+import {PolymerElement, html} from '@polymer/polymer';
+import '@firefly/firefly-dialog';
+
+class SampleElement extends PolymerElement {
+  static get template() {
+    return html`
+    <firefly-dialog></firefly-dialog>
+    `;
+  }
+}
+customElements.define('sample-element', SampleElement);
+
+```
+
+## Running the demo locally
+```
+$ polymer serve --open
 ```
 
 ## Running Tests
-
 ```
 $ polymer test
 ```
