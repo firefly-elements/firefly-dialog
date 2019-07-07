@@ -1,14 +1,14 @@
-import { PolymerElement } from './node_modules/@polymer/polymer/polymer-element.js';
+import { PolymerElement } from '@polymer/polymer/polymer-element.js';
 import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 import { afterNextRender } from '@polymer/polymer/lib/utils/render-status.js';
 
-// import './node_modules/@polymer/paper-dialog/paper-dialog.js';
+import './node_modules/@polymer/paper-dialog/paper-dialog.js';
 import './node_modules/@polymer/paper-button/paper-button.js';
 
 import {FireflyDialogMixin} from './firefly-dialog-mixin.js';
 
 /**
- * `asp-fire-dialog` this component is responsible for displaying detail pages. These are 
+ * `firefly-dialog` this component is responsible for displaying detail pages. These are 
  * components that implement the AspComponentModelMixin and are tagged with the CSS class
  * ".detail-page".
  *
