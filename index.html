@@ -1,25 +1,35 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>firefly-dialog</title>
-    <script type="module">
+
+<head>
+  <meta charset="utf-8">
+  <title>firefly-dialog</title>
+  <script type="module">
     import './firefly-dialog.js'
-    </script>
-  </head>
+  </script>
+</head>
 
-  <body>
+<body>
 
-      <firefly-dialog>
-        <form class = 'detail-page'>
-          First name:<br>
-          <input type="text" name="firstname" value="Mickey">
-          <br>
-          Last name:<br>
-          <input type="text" name="lastname" value="Mouse">
-          <br><br>
-        </form> 
-      </firefly-dialog>
+  <button onclick="toggleDialog()">Open Form</button>
 
-  </body>
+  <firefly-dialog id="dialog" dialog-label ="My Custom Form">
+    <form class='detail-page'>
+      First name:<br>
+      <input type="text" name="firstname" value="Mickey">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Mouse">
+      <br><br>
+    </form>
+  </firefly-dialog>
+
+</body>
+
+<script>
+  toggleDialog = () => {
+    document.getElementById("dialog").open();
+  }
+</script>
+
 </html>
