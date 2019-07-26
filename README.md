@@ -1,6 +1,7 @@
 # <firefly-dialog\>
 
 a visual component that displays a form used to create new records.
+
 #Installation 
 
 ```
