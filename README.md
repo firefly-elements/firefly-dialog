@@ -5,8 +5,7 @@ a visual component that displays a form used to create new records.
 #Installation 
 
 ```
-npm install --save @firefly/firefly-dialog
-
+npm i @firefly-elements/firefly-dialog
 ```
 
 ## In an HTML file
@@ -14,7 +13,7 @@ npm install --save @firefly/firefly-dialog
 <html>
    <head>
       <script type="module">
-         import '@firefly/firefly-dialog';
+         import '@firefly-elements/firefly-dialog.js';
       </script>
    </head>
    <body>
@@ -30,7 +29,8 @@ npm install --save @firefly/firefly-dialog
 
 ```
 import {PolymerElement, html} from '@polymer/polymer';
-import '@firefly/firefly-dialog';
+import '@firefly-elements/firefly-dialog.js';
+;
 
 class SampleElement extends PolymerElement {
   static get template() {
