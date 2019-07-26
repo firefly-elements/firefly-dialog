@@ -1,8 +1,7 @@
-# <firefly-delete-dialog\>
+# <firefly-dialog\>
 
-This component allows the user to delete a doctype from the database.
-
-##Installation 
+a visual component that displays a form used to create new records.
+#Installation 
 
 ```
 npm install --save @firefly/firefly-dialog

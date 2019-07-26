@@ -1,9 +1,7 @@
-import { PolymerElement } from '@polymer/polymer/polymer-element.js';
-import { html } from '@polymer/polymer/lib/utils/html-tag.js';
+import { PolymerElement ,html} from '@polymer/polymer/polymer-element.js';
 import { afterNextRender } from '@polymer/polymer/lib/utils/render-status.js';
-
-import './node_modules/@polymer/paper-dialog/paper-dialog.js';
-import './node_modules/@polymer/paper-button/paper-button.js';
+import '@polymer/paper-dialog/paper-dialog.js';
+import '@polymer/paper-button/paper-button.js';
 
 import {FireflyDialogMixin} from './firefly-dialog-mixin.js';
 
