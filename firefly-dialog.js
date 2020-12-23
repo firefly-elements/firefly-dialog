@@ -56,12 +56,7 @@ class FireflyDialog extends FireflyDialogMixin(PolymerElement) {
         </div>
         <div class="buttons">
           <paper-button dialog-dismiss="">Cancel</paper-button>
-          <paper-button
-            dialog-confirm="[[closeOnAccept]]"
-            autofocus=""
-            on-tap="_addCard"
-            >Accept</paper-button
-          >
+          <paper-button autofocus="" on-tap="_addCard">Accept</paper-button>
         </div>
       </paper-dialog>
     `;
