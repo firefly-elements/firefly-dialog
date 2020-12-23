@@ -50,9 +50,9 @@ export const FireflyDialogMixin = (superclass) =>
           type: String,
           value: "",
         },
-        closeOnAccept: {
+        disableClose: {
           type: Boolean,
-          value: true,
+          value: false,
         },
       };
     }
@@ -93,6 +93,8 @@ export const FireflyDialogMixin = (superclass) =>
           })
         );
       }
+
+      if (!this.disableClose) this.close();
     }
 
     /**
@@ -119,6 +121,14 @@ export const FireflyDialogMixin = (superclass) =>
       this.mode = "Edit";
       let dialog = this.shadowRoot.querySelector("paper-dialog");
       dialog.open();
+    }
+
+    /**
+     * This method is responsible for closing the dialog.
+     */
+    close() {
+      let dialog = this.shadowRoot.querySelector("paper-dialog");
+      dialog.close();
     }
 
     setModel(model) {
