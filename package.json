@@ -1,7 +1,7 @@
 {
-  "description": "description goes here",
   "name": "@polymer/firefly-dialog",
-  "version": "",
+  "description": "a visual component that displays a form used to create new records.",
+  "version": "0.5.2",
   "resolutions": {
     "inherits": "2.0.3",
     "samsam": "1.1.3",
